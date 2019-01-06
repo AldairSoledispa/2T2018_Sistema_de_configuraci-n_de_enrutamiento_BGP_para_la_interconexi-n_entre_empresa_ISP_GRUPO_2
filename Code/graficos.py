@@ -4,6 +4,7 @@ from auxiliares import *
 import conexion_mysql as sql
 import time as tm
 import datetime as dtime
+from conexion_ssh import *
 
 #===============================================================================
 #inicio: ventana de login principal
@@ -13,6 +14,8 @@ import datetime as dtime
 #
 # Retorna: nada
 #-------------------------------------------------------------------------------
+
+
 def inicio(conexion):
     
     #===============================================================================

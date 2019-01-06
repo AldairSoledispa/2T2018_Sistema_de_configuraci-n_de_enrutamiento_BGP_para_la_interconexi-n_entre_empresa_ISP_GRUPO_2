@@ -43,7 +43,6 @@ def iniciar_Configuracion(objeto_ssh):
     objeto_ssh.send("enable\n")
     objeto_ssh.send("configure terminal\n")
 
-
 # ===============================================================================
 # guardar_Configuracion: guarda en memoria las configuraciones realizadas
 # Parametros:
@@ -135,22 +134,23 @@ def configurar_Interfaces(objeto_ssh, nom_empresa, nom_Dispo_Especifico, usuario
     guardar_Configuracion(objeto_ssh)
     print(nom_empresa + "->" + nom_Dispo_Especifico + "\nInterfaces configuradas con éxito")
 
-#============================================================================================
-#
-#                                        Pruebas
-#
-#============================================================================================
-conn = sql.realizar_conexion()
-if conn==-1:
-    print("nel")
-else:
-    listaL= ["192.168.101.0"]
-    listaR= ["0.0.0.0"]
-    tn1=conexion_ssh(HOST_Local,"admin","admin")
-    iniciar_Configuracion(tn1)
-    BGP.config_Vecino(tn1, "209.165.200.2","209.165.200.1", "65000","65001",listaL,listaR,"admin","admin")
-    guardar_Configuracion(tn1)
-    sql.cerrar_conexion(conn)
+
+# #============================================================================================
+# #
+# #                                        Pruebas
+# #
+# #============================================================================================
+# conn = sql.realizar_conexion()
+# if conn==-1:
+#     print("nel")
+# else:
+#     listaL= ["192.168.101.0"]
+#     listaR= ["0.0.0.0"]
+#     tn1=conexion_ssh(HOST_Local,"admin","admin")
+#     iniciar_Configuracion(tn1)
+#     BGP.config_Vecino(tn1, "209.165.200.2","209.165.200.1", "65000","65001",listaL,listaR,"admin","admin")
+#     guardar_Configuracion(tn1)
+#     sql.cerrar_conexion(conn)
 
 
 
