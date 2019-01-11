@@ -1,0 +1,38 @@
+conf t
+hostname EMPRESA_L
+ip domain-name fiec.espol.edu.ec
+no ip domain lookup
+crypto key generate rsa 
+1024
+
+banner motd #SOLO ACCESO A PERSONAL AUTORIZADO#
+username admin privilege 15 secret admin
+username alberto privilege 15 secret alberto
+username aldair privilege 15 secret aldair
+username ariana privilege 5 secret ariana
+line console 0
+
+
+exec-timeout 3 3
+login local
+exit
+line vty 0 15
+
+exec-timeout 3 3
+login local
+transport input all
+exit
+service password-encryption
+int f0/0
+des Conectado a LAN1
+ip address 192.168.101.11 255.255.255.0
+no sh
+int f0/1
+des Conectado a RED_REM_2
+ip address 192.168.100.1 255.255.255.0
+no sh
+int s0/2/0
+des Enlace serial BGP hacia AS_64511
+ip address 209.165.200.2 255.255.255.252
+no sh
+end

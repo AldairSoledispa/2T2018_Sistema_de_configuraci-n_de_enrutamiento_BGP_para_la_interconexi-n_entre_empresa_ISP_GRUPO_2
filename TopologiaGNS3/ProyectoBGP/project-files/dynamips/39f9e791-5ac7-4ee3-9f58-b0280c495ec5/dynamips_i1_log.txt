@@ -1,0 +1,21 @@
+Jan 06 11:59:48.584 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jan 06 11:59:48.584 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50595.
+Jan 06 11:59:48.744 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 06 11:59:48.744 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Josue Sanchez\AppData\Roaming\SPB_Data\GNS3\projects\PrimerAvanceBGP\project-files\dynamips 
+Jan 06 11:59:48.744 GENERAL: working_dir=C:\Users\Josue Sanchez\AppData\Roaming\SPB_Data\GNS3\projects\PrimerAvanceBGP\project-files\dynamips
+Jan 06 11:59:48.744 HYPERVISOR: exec_cmd: ethsw create SW1 
+Jan 06 11:59:54.112 HYPERVISOR: exec_cmd: nio create_udp udp-fd26cc8d-1a5c-4e38-877b-37d3562a03c2 10015 127.0.0.1 10014 
+Jan 06 11:59:54.114 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-fd26cc8d-1a5c-4e38-877b-37d3562a03c2 
+Jan 06 11:59:54.119 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-fd26cc8d-1a5c-4e38-877b-37d3562a03c2 1 
+Jan 06 11:59:54.193 HYPERVISOR: exec_cmd: nio create_udp udp-3126496a-2391-401c-837d-c448995add9f 10022 127.0.0.1 10023 
+Jan 06 11:59:54.193 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-3126496a-2391-401c-837d-c448995add9f 
+Jan 06 11:59:54.209 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-3126496a-2391-401c-837d-c448995add9f 1 
+Jan 06 12:00:03.595 HYPERVISOR: exec_cmd: ethsw remove_nio SW1 udp-3126496a-2391-401c-837d-c448995add9f 
+Jan 06 12:00:03.626 HYPERVISOR: exec_cmd: nio delete udp-3126496a-2391-401c-837d-c448995add9f 
+Jan 06 12:03:07.741 HYPERVISOR: exec_cmd: nio create_udp udp-0b74275a-6fa7-47a0-b6ba-adccd616dd95 10023 127.0.0.1 10022 
+Jan 06 12:03:07.741 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-0b74275a-6fa7-47a0-b6ba-adccd616dd95 
+Jan 06 12:03:07.757 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-0b74275a-6fa7-47a0-b6ba-adccd616dd95 1 
+Jan 06 12:03:45.499 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Jan 06 12:03:45.528 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 06 12:03:45.837 HYPERVISOR: Stopped.
+Jan 06 12:03:45.837 GENERAL: reset done.
