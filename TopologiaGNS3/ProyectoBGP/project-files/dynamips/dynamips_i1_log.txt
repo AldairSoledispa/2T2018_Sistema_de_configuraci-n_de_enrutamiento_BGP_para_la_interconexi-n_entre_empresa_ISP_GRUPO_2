@@ -1,0 +1,12 @@
+Jan 10 21:26:41.674 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jan 10 21:26:41.674 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59546.
+Jan 10 21:26:41.899 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 10 21:26:41.899 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Josue Sanchez\AppData\Roaming\SPB_Data\GNS3\projects\PrimerAvanceBGP\project-files\dynamips 
+Jan 10 21:26:41.899 GENERAL: working_dir=C:\Users\Josue Sanchez\AppData\Roaming\SPB_Data\GNS3\projects\PrimerAvanceBGP\project-files\dynamips
+Jan 10 21:26:41.899 HYPERVISOR: exec_cmd: ethsw create SW1 
+Jan 10 21:26:45.203 HYPERVISOR: exec_cmd: nio create_udp udp-06c6c14d-64d5-451e-b329-eff9f0c0c5fd 10007 127.0.0.1 10006 
+Jan 10 21:26:45.203 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-06c6c14d-64d5-451e-b329-eff9f0c0c5fd 
+Jan 10 21:26:45.229 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-06c6c14d-64d5-451e-b329-eff9f0c0c5fd 1 
+Jan 10 21:26:45.838 HYPERVISOR: exec_cmd: nio create_udp udp-af20a0f2-5087-4c99-a62b-362e6c1553ef 10015 127.0.0.1 10014 
+Jan 10 21:26:45.838 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-af20a0f2-5087-4c99-a62b-362e6c1553ef 
+Jan 10 21:26:45.848 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-af20a0f2-5087-4c99-a62b-362e6c1553ef 1 
